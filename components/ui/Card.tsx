@@ -1,6 +1,5 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 
 interface CardProps {
   title: string
@@ -38,12 +37,12 @@ export const Card: React.FC<CardProps> = ({
     >
       {image && (
         <div className="relative h-56 w-full overflow-hidden flex-shrink-0">
-          <Image
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src={image}
             alt={imageAlt || title}
-            fill
-            className="object-cover transition-transform duration-500 hover:scale-110"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+            loading="lazy"
           />
           {badge && (
             <div className="absolute top-4 right-4 bg-secondary text-white px-3 py-1 rounded-full text-sm font-bebas">
