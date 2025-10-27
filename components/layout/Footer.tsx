@@ -28,10 +28,30 @@ const Footer = () => {
   ]
 
   const socialLinks = [
-    { icon: <Instagram size={24} />, href: 'https://www.instagram.com/pld_mma', label: 'Instagram' },
-    { icon: <Music size={24} />, href: 'http://www.tiktok.com/@sportmmma', label: 'TikTok' },
-    { icon: <Facebook size={24} />, href: 'https://www.facebook.com/share/1VJnzTy7Sq/?mibextid=wwXIfr', label: 'Facebook' },
-    { icon: <Youtube size={24} />, href: 'https://www.youtube.com/@Pldshoto', label: 'YouTube' },
+    { 
+      icon: <Instagram size={24} />, 
+      href: 'https://www.instagram.com/pld_mma', 
+      label: 'Instagram',
+      color: 'text-pink-500 hover:text-pink-400'
+    },
+    { 
+      icon: <Music size={24} />, 
+      href: 'http://www.tiktok.com/@sportmmma', 
+      label: 'TikTok',
+      color: 'text-cyan-400 hover:text-cyan-300'
+    },
+    { 
+      icon: <Facebook size={24} />, 
+      href: 'https://www.facebook.com/share/1VJnzTy7Sq/?mibextid=wwXIfr', 
+      label: 'Facebook',
+      color: 'text-blue-500 hover:text-blue-400'
+    },
+    { 
+      icon: <Youtube size={24} />, 
+      href: 'https://www.youtube.com/@Pldshoto', 
+      label: 'YouTube',
+      color: 'text-red-500 hover:text-red-400'
+    },
   ]
 
   return (
@@ -64,8 +84,10 @@ const Footer = () => {
                 <motion.a
                   key={index}
                   href={social.href}
-                  className="text-gray-400 hover:text-primary transition-colors bg-gray-800 p-2 rounded"
-                  whileHover={{ scale: 1.1, rotate: 5 }}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${social.color} bg-gray-800 p-3 rounded-lg transition-all duration-300 hover:bg-opacity-20`}
+                  whileHover={{ scale: 1.15, y: -5 }}
                   whileTap={{ scale: 0.95 }}
                   aria-label={social.label}
                 >
@@ -127,17 +149,22 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-gray-400 text-sm text-center md:text-left">
-            © {new Date().getFullYear()} Paladin MMA Academy. All rights reserved.
-          </div>
-          <div className="flex gap-6 text-sm text-gray-400">
-            <a href="/privacy" className="hover:text-primary transition-colors">
-              Privacy Policy
-            </a>
-            <a href="/terms" className="hover:text-primary transition-colors">
-              Terms of Service
-            </a>
+        <div className="border-t border-gray-800 pt-8">
+          <div className="text-gray-400 text-sm text-center">
+            <p className="mb-2">
+              © {new Date().getFullYear()} Paladin MMA Academy. All rights reserved.
+            </p>
+            <p>
+              {"Hosted and Created with ❤️ by the "}
+              <a 
+                href="https://host-it.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:text-secondary transition-colors font-semibold"
+              >
+                Host-IT Team
+              </a>
+            </p>
           </div>
         </div>
       </div>

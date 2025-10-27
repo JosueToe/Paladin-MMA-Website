@@ -26,7 +26,7 @@ const ProgramsSchedule = () => {
     {
       title: 'MMA Kids Program',
       description: 'Build confidence, discipline, and martial arts skills in young warriors.',
-      image: '/images/programs/mma-kids.png',
+      image: '/images/programs/mma-kids.jpg',
       level: 'Ages 6-14',
       duration: '1 hour',
       schedule: 'Mon, Tue, Fri - 6:00 PM - 7:00 PM',

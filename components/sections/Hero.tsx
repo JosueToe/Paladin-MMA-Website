@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { ChevronDown } from 'lucide-react'
+import { ChevronDown, Instagram, Youtube, Facebook, Music } from 'lucide-react'
 import Button from '../ui/Button'
 
 const Hero = () => {
@@ -61,17 +61,72 @@ const Hero = () => {
           </motion.p>
 
           <motion.div
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            className="flex flex-col gap-6 justify-center items-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <Button variant="primary" size="lg" href="#programs">
-              VIEW PROGRAMS
-            </Button>
-            <Button variant="ghost" size="lg" href="#contact">
-              START TRAINING
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button variant="primary" size="lg" href="#programs">
+                VIEW PROGRAMS
+              </Button>
+              <Button variant="ghost" size="lg" href="#contact">
+                START TRAINING
+              </Button>
+            </div>
+            
+            {/* Social Icons */}
+            <motion.div 
+              className="flex gap-4"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+            >
+              <motion.a
+                href="https://www.instagram.com/pld_mma"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-pink-500 hover:text-pink-400 transition-colors"
+                whileHover={{ scale: 1.2, rotate: 5 }}
+                whileTap={{ scale: 0.9 }}
+                aria-label="Instagram"
+              >
+                <Instagram size={28} />
+              </motion.a>
+              <motion.a
+                href="http://www.tiktok.com/@sportmmma"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cyan-400 hover:text-cyan-300 transition-colors"
+                whileHover={{ scale: 1.2, rotate: 5 }}
+                whileTap={{ scale: 0.9 }}
+                aria-label="TikTok"
+              >
+                <Music size={28} />
+              </motion.a>
+              <motion.a
+                href="https://www.facebook.com/share/1VJnzTy7Sq/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:text-blue-400 transition-colors"
+                whileHover={{ scale: 1.2, rotate: 5 }}
+                whileTap={{ scale: 0.9 }}
+                aria-label="Facebook"
+              >
+                <Facebook size={28} />
+              </motion.a>
+              <motion.a
+                href="https://www.youtube.com/@Pldshoto"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-red-500 hover:text-red-400 transition-colors"
+                whileHover={{ scale: 1.2, rotate: 5 }}
+                whileTap={{ scale: 0.9 }}
+                aria-label="YouTube"
+              >
+                <Youtube size={28} />
+              </motion.a>
+            </motion.div>
           </motion.div>
         </motion.div>
 

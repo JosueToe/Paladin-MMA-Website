@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Instagram, Youtube, Facebook, Music } from 'lucide-react'
 import Button from '../ui/Button'
 
 const Navigation = () => {
@@ -24,6 +24,33 @@ const Navigation = () => {
     { href: '#programs', label: 'PROGRAMS' },
     { href: '#gallery', label: 'GALLERY' },
     { href: '/store', label: 'STORE' },
+  ]
+
+  const socialLinks = [
+    { 
+      icon: <Instagram size={18} />, 
+      href: 'https://www.instagram.com/pld_mma', 
+      label: 'Instagram',
+      color: 'text-pink-500 hover:text-pink-400'
+    },
+    { 
+      icon: <Music size={18} />, 
+      href: 'http://www.tiktok.com/@sportmmma', 
+      label: 'TikTok',
+      color: 'text-cyan-400 hover:text-cyan-300'
+    },
+    { 
+      icon: <Facebook size={18} />, 
+      href: 'https://www.facebook.com/share/1VJnzTy7Sq/?mibextid=wwXIfr', 
+      label: 'Facebook',
+      color: 'text-blue-500 hover:text-blue-400'
+    },
+    { 
+      icon: <Youtube size={18} />, 
+      href: 'https://www.youtube.com/@Pldshoto', 
+      label: 'YouTube',
+      color: 'text-red-500 hover:text-red-400'
+    },
   ]
 
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -87,6 +114,24 @@ const Navigation = () => {
               <Button variant="primary" size="sm" href="#contact">
                 START TRAINING
               </Button>
+              
+              {/* Social Icons */}
+              <div className="flex items-center gap-3 pl-4 border-l border-gray-700">
+                {socialLinks.map((social, index) => (
+                  <motion.a
+                    key={index}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`${social.color} transition-colors`}
+                    whileHover={{ scale: 1.2, y: -2 }}
+                    whileTap={{ scale: 0.9 }}
+                    aria-label={social.label}
+                  >
+                    {social.icon}
+                  </motion.a>
+                ))}
+              </div>
             </div>
 
             {/* Mobile Menu Button */}
