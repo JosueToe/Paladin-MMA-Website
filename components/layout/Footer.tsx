@@ -12,7 +12,6 @@ import {
   ArrowUp,
 } from 'lucide-react'
 import { Music } from 'lucide-react' // Using Music icon for TikTok
-import Image from 'next/image'
 
 const Footer = () => {
 
@@ -45,11 +44,10 @@ const Footer = () => {
               className="flex items-center gap-3 mb-4"
               whileHover={{ scale: 1.05 }}
             >
-              <Image
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 src="/images/logo/logo.png"
                 alt="Paladin MMA Logo"
-                width={60}
-                height={60}
                 className="h-14 w-auto"
               />
               <div className="text-3xl font-bebas tracking-wider">

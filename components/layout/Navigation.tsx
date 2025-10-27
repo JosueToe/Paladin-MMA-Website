@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import Button from '../ui/Button'
-import Image from 'next/image'
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -59,13 +58,11 @@ const Navigation = () => {
               whileHover={{ scale: 1.05 }}
               onClick={(e) => scrollToSection(e, '#home')}
             >
-              <Image
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 src="/images/logo/logo.png"
                 alt="Paladin MMA Logo"
-                width={50}
-                height={50}
                 className="h-12 w-auto"
-                priority
               />
               <div className="text-2xl md:text-3xl font-bebas tracking-wider flex items-center gap-2">
                 <span className="text-secondary">PALADIN</span>
@@ -126,12 +123,11 @@ const Navigation = () => {
             >
               <div className="container-custom py-8">
                 <div className="flex flex-col items-center mb-8">
-                  <Image
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
                     src="/images/logo/logo.png"
                     alt="Paladin MMA Logo"
-                    width={80}
-                    height={80}
-                    className="mb-4"
+                    className="h-20 w-auto mb-4"
                   />
                   <div className="text-3xl font-bebas tracking-wider flex items-center gap-2">
                     <span className="text-secondary">PALADIN</span>
