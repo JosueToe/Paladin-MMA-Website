@@ -10,15 +10,8 @@
   NPM_FLAGS = "--legacy-peer-deps"
 
 # Redirect rules for Netlify
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+# The @netlify/plugin-nextjs handles all Next.js routing automatically
+# Only add custom redirects if needed
 
 # Headers for all pages
 [[headers]]
