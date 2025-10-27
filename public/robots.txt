@@ -2,6 +2,8 @@
 User-agent: *
 Allow: /
 
+# Host
+Host: https://paladinmma.com
+
 # Sitemaps
 Sitemap: https://paladinmma.com/sitemap.xml
-

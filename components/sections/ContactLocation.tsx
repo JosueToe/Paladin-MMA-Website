@@ -343,8 +343,7 @@ const ContactLocation = () => {
                 >
                   <CheckCircle size={24} />
                   <div>
-                    <strong>Success!</strong> We'll get back to you within 24
-                    hours.
+                    <strong>Success!</strong> {"We'll get back to you within 24 hours."}
                   </div>
                 </motion.div>
               )}

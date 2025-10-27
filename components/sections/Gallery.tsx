@@ -86,6 +86,7 @@ const Gallery = () => {
                   onClick={() => setSelectedImage(image.src)}
                   layout
                 >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={image.src}
                     alt={image.alt}

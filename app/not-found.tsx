@@ -20,8 +20,7 @@ export default function NotFound() {
             PAGE NOT FOUND
           </h2>
           <p className="text-gray-400 mb-8 max-w-md mx-auto">
-            The page you're looking for doesn't exist. It might have been moved or
-            deleted.
+            {"The page you're looking for doesn't exist. It might have been moved or deleted."}
           </p>
           <Link href="/">
             <Button variant="primary" size="lg">

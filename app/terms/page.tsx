@@ -19,8 +19,7 @@ export default function TermsOfService() {
               1. Acceptance of Terms
             </h2>
             <p className="text-gray-400 mb-4">
-              By accessing and using Paladin MMA Academy's services, you accept and
-              agree to be bound by these Terms of Service.
+              {"By accessing and using Paladin MMA Academy's services, you accept and agree to be bound by these Terms of Service."}
             </p>
 
             <h2 className="text-2xl font-bebas tracking-wider text-light mt-8 mb-4">

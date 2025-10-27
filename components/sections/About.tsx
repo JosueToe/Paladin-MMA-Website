@@ -66,7 +66,7 @@ const About = () => {
               animate={inView ? { opacity: 1 } : {}}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              At Paladin MMA Academy, we don't just teach martial arts – we forge
+              {"At Paladin MMA Academy, we don't just teach martial arts – we forge"}
               champions. Our world-class facility in Miami/Hialeah combines
               traditional martial arts discipline with cutting-edge training
               techniques. We offer specialized programs for all ages and fitness levels.

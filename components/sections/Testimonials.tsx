@@ -118,7 +118,7 @@ const Testimonials = () => {
                   <Quote className="text-primary mb-4 flex-shrink-0" size={40} />
 
                   <p className="text-gray-300 mb-6 leading-relaxed italic flex-grow line-clamp-4">
-                    "{testimonial.quote}"
+                    {`"${testimonial.quote}"`}
                   </p>
 
                   <div className="flex-shrink-0">

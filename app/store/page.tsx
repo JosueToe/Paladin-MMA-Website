@@ -39,7 +39,7 @@ export default function StorePage() {
           className="max-w-md mx-auto"
         >
           <p className="text-gray-300 text-lg mb-8">
-            You're being redirected to our TikTok Shop...
+            {"You're being redirected to our TikTok Shop..."}
           </p>
 
           {/* Loading Animation */}

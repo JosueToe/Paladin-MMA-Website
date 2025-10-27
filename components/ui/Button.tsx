@@ -1,12 +1,15 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import { motion, HTMLMotionProps } from 'framer-motion'
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps {
   variant?: 'primary' | 'secondary' | 'ghost'
   size?: 'sm' | 'md' | 'lg'
   children: React.ReactNode
   className?: string
   href?: string
+  onClick?: () => void
+  type?: 'button' | 'submit' | 'reset'
+  disabled?: boolean
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -15,7 +18,9 @@ export const Button: React.FC<ButtonProps> = ({
   children,
   className = '',
   href,
-  ...props
+  onClick,
+  type = 'button',
+  disabled = false,
 }) => {
   const baseStyles =
     'font-bebas tracking-wider transition-all duration-300 inline-flex items-center justify-center rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed uppercase'
@@ -55,7 +60,9 @@ export const Button: React.FC<ButtonProps> = ({
       className={combinedClassName}
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      {...props}
+      onClick={onClick}
+      type={type}
+      disabled={disabled}
     >
       {children}
     </motion.button>

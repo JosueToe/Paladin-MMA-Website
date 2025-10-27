@@ -134,6 +134,7 @@ const Classes = () => {
         {selectedClass && (
           <div>
             <div className="mb-6">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={selectedClass.image}
                 alt={selectedClass.title}
