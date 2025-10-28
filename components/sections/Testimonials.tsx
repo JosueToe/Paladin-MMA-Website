@@ -21,42 +21,42 @@ const Testimonials = () => {
       name: 'Carlos M.',
       role: 'MMA Adult Program',
       quote:
-        "Best MMA gym in Miami! The coaches are professional, knowledgeable, and genuinely care about your progress. Clean facility with great equipment. Highly recommend!",
+        "Best MMA gym in Miami! Coach Jorge and Coach Sotolongo are professional, knowledgeable, and genuinely care about your progress. Clean facility with great equipment. Highly recommend!",
       rating: 5,
     },
     {
       name: 'Jennifer L.',
       role: 'Personal Training Client',
       quote:
-        'Coach Silva is incredible! The personal training sessions are perfectly tailored to my goals. I\'ve seen amazing results in just 3 months. Worth every penny!',
+        'Coach Jorge is incredible! The personal training sessions are perfectly tailored to my goals. I\'ve seen amazing results in just 3 months. Worth every penny!',
       rating: 5,
     },
     {
       name: 'Robert T.',
       role: 'MMA/Crosstraining',
       quote:
-        'The early morning crosstraining classes are exactly what I needed. Challenging workouts, great energy, and everyone is supportive. This place is the real deal!',
+        'The early morning crosstraining classes with Coach Sotolongo are exactly what I needed. Challenging workouts, great energy, and everyone is supportive. This place is the real deal!',
       rating: 5,
     },
     {
       name: 'Amanda S.',
       role: 'Kids Program Parent',
       quote:
-        'My daughter loves the kids program! Coach Martinez is fantastic with children. She\'s learned discipline, respect, and self-defense. Couldn\'t ask for more!',
+        'My daughter loves the kids program! Coach Jorge is fantastic with children. She\'s learned discipline, respect, and self-defense. Couldn\'t ask for more!',
       rating: 5,
     },
     {
       name: 'Mike R.',
       role: 'Adult MMA Student',
       quote:
-        'Started as a complete beginner and the coaches made me feel welcome from day one. The instruction is top-notch and the community is like family.',
+        'Started as a complete beginner and Coach Jorge and Coach Sotolongo made me feel welcome from day one. The instruction is top-notch and the community is like family.',
       rating: 5,
     },
     {
       name: 'Lisa P.',
       role: 'Fitness Member',
       quote:
-        'Clean facility, professional staff, and great atmosphere. The classes are challenging but fun. Best decision I made for my fitness journey!',
+        'Clean facility, professional staff, and great atmosphere. Coach Sotolongo\'s classes are challenging but fun. Best decision I made for my fitness journey!',
       rating: 5,
     },
   ]
