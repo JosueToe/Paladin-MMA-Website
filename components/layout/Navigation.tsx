@@ -78,7 +78,7 @@ const Navigation = () => {
       >
         <div className="container-custom">
           <div className="flex items-center justify-between">
-            {/* Logo and Social Icons */}
+            {/* Logo and Text */}
             <div className="flex items-center gap-4">
               <motion.a
                 href="#home"
@@ -94,22 +94,10 @@ const Navigation = () => {
                 />
               </motion.a>
               
-              {/* Social Icons */}
-              <div className="flex items-center gap-3">
-                {socialLinks.map((social, index) => (
-                  <motion.a
-                    key={index}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`${social.color} transition-colors`}
-                    whileHover={{ scale: 1.2, y: -2 }}
-                    whileTap={{ scale: 0.9 }}
-                    aria-label={social.label}
-                  >
-                    {social.icon}
-                  </motion.a>
-                ))}
+              {/* PLD MMA Text */}
+              <div className="text-2xl md:text-3xl font-bebas tracking-wider flex items-center gap-2">
+                <span className="text-secondary">PLD</span>
+                <span className="text-primary">MMA</span>
               </div>
             </div>
 
@@ -130,6 +118,24 @@ const Navigation = () => {
               <Button variant="primary" size="sm" href="#contact">
                 START TRAINING
               </Button>
+              
+              {/* Social Icons */}
+              <div className="flex items-center gap-3 pl-4 border-l border-gray-700">
+                {socialLinks.map((social, index) => (
+                  <motion.a
+                    key={index}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`${social.color} transition-colors`}
+                    whileHover={{ scale: 1.2, y: -2 }}
+                    whileTap={{ scale: 0.9 }}
+                    aria-label={social.label}
+                  >
+                    {social.icon}
+                  </motion.a>
+                ))}
+              </div>
             </div>
 
             {/* Mobile Menu Button */}
@@ -172,22 +178,10 @@ const Navigation = () => {
                     alt="Paladin MMA Logo"
                     className="h-20 w-auto mb-4"
                   />
-                  {/* Social Icons */}
-                  <div className="flex items-center gap-4">
-                    {socialLinks.map((social, index) => (
-                      <motion.a
-                        key={index}
-                        href={social.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`${social.color} transition-colors`}
-                        whileHover={{ scale: 1.2, y: -2 }}
-                        whileTap={{ scale: 0.9 }}
-                        aria-label={social.label}
-                      >
-                        {social.icon}
-                      </motion.a>
-                    ))}
+                  {/* PLD MMA Text */}
+                  <div className="text-3xl font-bebas tracking-wider flex items-center gap-2">
+                    <span className="text-secondary">PLD</span>
+                    <span className="text-primary">MMA</span>
                   </div>
                 </div>
                 <div className="flex flex-col gap-6">
