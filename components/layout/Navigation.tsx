@@ -78,25 +78,40 @@ const Navigation = () => {
       >
         <div className="container-custom">
           <div className="flex items-center justify-between">
-            {/* Logo */}
-            <motion.a
-              href="#home"
-              className="flex items-center gap-3"
-              whileHover={{ scale: 1.05 }}
-              onClick={(e) => scrollToSection(e, '#home')}
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/images/logo/logo.png"
-                alt="Paladin MMA Logo"
-                className="h-12 w-auto"
-              />
-              <div className="text-2xl md:text-3xl font-bebas tracking-wider flex items-center gap-2">
-                <span className="text-secondary">PALADIN</span>
-                <span className="text-primary">MMA</span>
-                <span className="text-light">ACADEMY</span>
+            {/* Logo and Social Icons */}
+            <div className="flex items-center gap-4">
+              <motion.a
+                href="#home"
+                className="flex items-center gap-3"
+                whileHover={{ scale: 1.05 }}
+                onClick={(e) => scrollToSection(e, '#home')}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/logo/logo.png"
+                  alt="Paladin MMA Logo"
+                  className="h-12 w-auto"
+                />
+              </motion.a>
+              
+              {/* Social Icons */}
+              <div className="flex items-center gap-3">
+                {socialLinks.map((social, index) => (
+                  <motion.a
+                    key={index}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`${social.color} transition-colors`}
+                    whileHover={{ scale: 1.2, y: -2 }}
+                    whileTap={{ scale: 0.9 }}
+                    aria-label={social.label}
+                  >
+                    {social.icon}
+                  </motion.a>
+                ))}
               </div>
-            </motion.a>
+            </div>
 
             {/* Desktop Menu */}
             <div className="hidden lg:flex items-center gap-8">
@@ -115,24 +130,6 @@ const Navigation = () => {
               <Button variant="primary" size="sm" href="#contact">
                 START TRAINING
               </Button>
-              
-              {/* Social Icons */}
-              <div className="flex items-center gap-3 pl-4 border-l border-gray-700">
-                {socialLinks.map((social, index) => (
-                  <motion.a
-                    key={index}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`${social.color} transition-colors`}
-                    whileHover={{ scale: 1.2, y: -2 }}
-                    whileTap={{ scale: 0.9 }}
-                    aria-label={social.label}
-                  >
-                    {social.icon}
-                  </motion.a>
-                ))}
-              </div>
             </div>
 
             {/* Mobile Menu Button */}
@@ -175,10 +172,22 @@ const Navigation = () => {
                     alt="Paladin MMA Logo"
                     className="h-20 w-auto mb-4"
                   />
-                  <div className="text-3xl font-bebas tracking-wider flex items-center gap-2">
-                    <span className="text-secondary">PALADIN</span>
-                    <span className="text-primary">MMA</span>
-                    <span className="text-light">ACADEMY</span>
+                  {/* Social Icons */}
+                  <div className="flex items-center gap-4">
+                    {socialLinks.map((social, index) => (
+                      <motion.a
+                        key={index}
+                        href={social.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`${social.color} transition-colors`}
+                        whileHover={{ scale: 1.2, y: -2 }}
+                        whileTap={{ scale: 0.9 }}
+                        aria-label={social.label}
+                      >
+                        {social.icon}
+                      </motion.a>
+                    ))}
                   </div>
                 </div>
                 <div className="flex flex-col gap-6">

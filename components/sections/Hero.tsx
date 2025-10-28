@@ -40,7 +40,7 @@ const Hero = () => {
             }}
           />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/65 to-black/85"></div>
       </div>
 
       {/* Content */}
