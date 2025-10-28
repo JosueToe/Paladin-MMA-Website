@@ -94,6 +94,7 @@ const Navigation = () => {
               <div className="text-2xl md:text-3xl font-bebas tracking-wider flex items-center gap-2">
                 <span className="text-secondary">PALADIN</span>
                 <span className="text-primary">MMA</span>
+                <span className="text-light">ACADEMY</span>
               </div>
             </motion.a>
 
@@ -177,6 +178,7 @@ const Navigation = () => {
                   <div className="text-3xl font-bebas tracking-wider flex items-center gap-2">
                     <span className="text-secondary">PALADIN</span>
                     <span className="text-primary">MMA</span>
+                    <span className="text-light">ACADEMY</span>
                   </div>
                 </div>
                 <div className="flex flex-col gap-6">

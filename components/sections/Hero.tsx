@@ -18,17 +18,28 @@ const Hero = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-dark"
     >
-      {/* Background Image with Parallax Effect */}
-      <div
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage:
-            'url(https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?q=80&w=2070)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'fixed',
-        }}
-      >
+      {/* Background Video */}
+      <div className="absolute inset-0 z-0">
+        <video
+          className="w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="metadata"
+        >
+          <source src="/videos/hero-video.mp4" type="video/mp4" />
+          {/* Fallback image if video fails to load */}
+          <div
+            className="w-full h-full"
+            style={{
+              backgroundImage:
+                'url(https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?q=80&w=2070)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black"></div>
       </div>
 
@@ -45,10 +56,10 @@ const Hero = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
           >
-            <span className="block text-light glitch" data-text="UNLEASH YOUR">
-              UNLEASH YOUR
+            <span className="block text-light glitch" data-text="PALADIN">
+              PALADIN
             </span>
-            <span className="block text-gradient mt-2">WARRIOR WITHIN</span>
+            <span className="block text-gradient mt-2">MMA ACADEMY</span>
           </motion.h1>
 
           <motion.p
@@ -57,7 +68,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Premier MMA Training in Miami/Hialeah
+            Premier MMA Training Academy in Miami/Hialeah
           </motion.p>
 
           <motion.div

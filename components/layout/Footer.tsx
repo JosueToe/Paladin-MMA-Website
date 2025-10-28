@@ -73,6 +73,7 @@ const Footer = () => {
               <div className="text-3xl font-bebas tracking-wider">
                 <span className="text-secondary">PALADIN</span>
                 <span className="text-primary"> MMA</span>
+                <span className="text-light"> ACADEMY</span>
               </div>
             </motion.div>
             <p className="text-gray-400 mb-6 leading-relaxed">
