@@ -58,7 +58,6 @@ const ContactLocation = () => {
     { value: 'morning', label: 'Morning (6AM - 12PM)' },
     { value: 'afternoon', label: 'Afternoon (12PM - 6PM)' },
     { value: 'evening', label: 'Evening (6PM - 9PM)' },
-    { value: 'weekend', label: 'Weekend' },
   ]
 
   const contactInfo = [
@@ -82,7 +81,7 @@ const ContactLocation = () => {
     {
       icon: <Clock className="w-6 h-6" />,
       title: 'Hours',
-      content: 'Mon-Fri: 6AM-9PM | Sat: 9AM-5PM | Sun: Closed',
+      content: 'Mon-Fri: 6AM-9PM | Weekends: Closed',
     },
   ]
 
@@ -386,7 +385,7 @@ const ContactLocation = () => {
               <span className="text-primary text-2xl">✓</span>
               <div>
                 <strong className="text-light">Flexible Schedule:</strong>
-                <span className="text-gray-300"> Classes available 6 days a week</span>
+                <span className="text-gray-300"> Classes available Monday through Friday</span>
               </div>
             </div>
             <div className="flex items-start gap-3">
