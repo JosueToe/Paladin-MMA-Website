@@ -44,7 +44,7 @@ const ContactLocation = () => {
     { value: 'mma-kids', label: 'MMA Kids Program' },
     { value: 'mma-adults', label: 'MMA Adults' },
     { value: 'personal-training', label: 'Personal Training' },
-    { value: 'after-school', label: 'After School Program' },
+    { value: 'young-warriors', label: 'Paladin Young Warriors School Program' },
   ]
 
   const experienceOptions = [

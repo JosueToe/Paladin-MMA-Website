@@ -57,15 +57,15 @@ const ProgramsSchedule = () => {
         'Get personalized attention with private training sessions tailored to your specific goals. Whether you want to compete, lose weight, or master specific techniques, our coaches create custom programs designed for your success. Flexible scheduling available.',
     },
     {
-      title: 'After School Program',
-      description: 'Safe, structured environment for kids after school with MMA training.',
+      title: 'Paladin Young Warriors School Program',
+      description: 'Structured martial arts program for schools, promoting discipline, coordination, and social skills.',
       image: '/images/programs/after-school.png',
       level: 'Ages 6-14',
-      duration: '3 hours',
-      schedule: 'Mon - Fri - 3:00 PM - 6:00 PM',
+      duration: '1 hour',
+      schedule: 'Before 6:00 PM - Flexible Schedule',
       instructor: 'Jorge Sotolongo',
       details:
-        'A safe, supervised after-school program combining homework time, character development, and martial arts training. Kids stay active, build friendships, and develop discipline while parents have peace of mind. Includes healthy snacks and structured activities.',
+        'A school-based martial arts program running before 6:00 PM with one-hour classes twice per week. Designed to support holistic student development through structured MMA training, promoting personal discipline, emotional control, self-esteem, motor coordination, and social skills. Uses step-by-step instruction, coordination drills, respect and etiquette activities, and cooperative group work with a progressive achievement system. Physical and emotional safety is prioritized with no aggressive contact in initial phases. Schedule set by agreement with the school.',
     },
   ]
 
