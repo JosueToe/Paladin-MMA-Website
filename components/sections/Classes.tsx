@@ -60,7 +60,7 @@ const Classes = () => {
       title: 'Paladin Young Warriors School Program',
       description: 'Structured martial arts program for schools, promoting discipline, coordination, and social skills.',
       image: 'https://images.unsplash.com/photo-1555597673-b21d5c935865?q=80&w=2070',
-      level: 'Ages 6-14',
+      level: 'Ages 8-15',
       duration: '1 hour',
       schedule: 'Before 6:00 PM - Flexible Schedule',
       details:

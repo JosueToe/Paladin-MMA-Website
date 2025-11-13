@@ -60,7 +60,7 @@ const ProgramsSchedule = () => {
       title: 'Paladin Young Warriors School Program',
       description: 'Structured martial arts program for schools, promoting discipline, coordination, and social skills.',
       image: '/images/programs/after-school.png',
-      level: 'Ages 6-14',
+      level: 'Ages 8-15',
       duration: '1 hour',
       schedule: 'Before 6:00 PM - Flexible Schedule',
       instructor: 'Jorge Sotolongo',
